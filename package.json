@@ -1,14 +1,32 @@
 {
-  "name": "orangehrm-e2e-tests",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@playwright/test": "^1.54.1",
-    "@types/node": "^24.1.0"
-  }
+	"name": "orangehrm-e2e-tests",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"prepare": "husky",
+		"format": "prettier --write .",
+		"format:check": "prettier --check .",
+		"test": "playwright test",
+		"test:ui": "playwright test --ui",
+		"test:report": "playwright test --reporter=html"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"lint-staged": {
+		"**/*.{js,jsx,ts,tsx,json,css,md}": "prettier --write"
+	},
+	"devDependencies": {
+		"@playwright/test": "^1.54.1",
+		"@types/node": "^24.1.0",
+		"husky": "^9.1.7",
+		"lint-staged": "^16.1.2",
+		"prettier": "^3.6.2",
+		"prettier-plugin-organize-imports": "^4.2.0"
+	},
+	"dependencies": {
+		"dotenv": "^16.5.0",
+		"save": "^2.9.0"
+	}
 }
