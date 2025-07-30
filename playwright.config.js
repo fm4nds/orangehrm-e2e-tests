@@ -10,8 +10,7 @@ export default defineConfig({
 	workers: process.env.CI ? 1 : undefined,
 	reporter: 'html',
 	use: {
-		baseURL:
-			'https://opensource-demo.orangehrmlive.com/web/index.php',
+		baseURL: 'https://opensource-demo.orangehrmlive.com',
 		trace: 'on-first-retry',
 	},
 
