@@ -1,37 +1,33 @@
 # OrangeHRM E2E Tests
+Automated E2E testing project for the OrangeHRM application using Playwright.
 
-Projeto de testes automatizados E2E para a aplicação OrangeHRM usando Playwright.
-
-## 🚀 Ferramentas
-
-- **Playwright** - Framework de automação E2E
-- **JavaScript** - Linguagem de programação
-- **Page Object Model** - Padrão de arquitetura
-- **GitHub Actions** - CI/CD Pipeline
-- **GitHub Pages** - Relatórios online
-
-## 📊 Relatórios Online
-
-**Acesse os relatórios dos testes em tempo real:**
+## 🚀 Tools
+- **Playwright** – E2E automation framework  
+- **JavaScript** – Programming language  
+- **Page Object Model** – Architecture pattern  
+- **GitHub Actions** – CI/CD pipeline  
+- **GitHub Pages** – Online reports
+  
+## 📊 Online Reports
+**Access real-time test reports:**  
 🌐 **[https://fm4nds.github.io/orangehrm-e2e-tests/](https://fm4nds.github.io/orangehrm-e2e-tests/)**
+Reports are automatically updated after each test execution in the pipeline.
 
-Os relatórios são atualizados automaticamente após cada execução dos testes na pipeline.
-
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 ```
 orangehrm-e2e-tests/
 ├── tests/
-│   ├── elements/          # Seletores CSS centralizados
+│   ├── elements/          # Centralized CSS
 │   │   ├── LoginElements.js
 │   │   └── newsfeedElements.js
 │   ├── pages/             # Page Objects
 │   │   ├── LoginPage.js
 │   │   └── newsfeedPage.js
-│   └── specs/             # Testes
+│   └── specs/             # Tests
 │       ├── login.spec.js
 │       └── newsfeed.spec.js
 ├── .github/workflows/     # GitHub Actions
 │   └── deploy.yml
-├── playwright.config.js   # Configuração do Playwright
+├── playwright.config.js   # Playwright Configuration
 └── package.json
